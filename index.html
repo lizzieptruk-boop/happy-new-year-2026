@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vòng Quay Chúc Tết 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tet-container">
+        <h1>🧧 VÒNG QUAY ĐẮC LỘC 🧧</h1>
+        
+        <div class="wheel-wrapper">
+            <canvas id="wheel" width="500" height="500"></canvas>
+            <div class="pointer">▼</div>
+        </div>
+
+        <button id="spin-btn">QUAY NGAY</button>
+        <div id="result-popup" class="hidden">
+            <div class="popup-content">
+                <h2>Chúc Mừng Năm Mới!</h2>
+                <p id="wish-text"></p>
+                <button onclick="closePopup()">Nhận Lộc</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+
+body {
+    background-color: #b30000; /* Đỏ đô sang trọng */
+    background-image: url('https://www.transparenttextures.com/patterns/oriental-tiles.png'); /* Họa tiết chìm */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.tet-container {
+    text-align: center;
+    color: #ffd700; /* Màu vàng kim */
+}
+
+h1 {
+    text-shadow: 2px 2px #5e0000;
+    font-size: 2.5rem;
+}
+
+.wheel-wrapper {
+    position: relative;
+    margin: 20px auto;
+}
+
+#wheel {
+    border: 10px solid #ffd700;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #000;
+}
+
+.pointer {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    color: #ffd700;
+    z-index: 10;
+}
+
+#spin-btn {
+    background: linear-gradient(to bottom, #ffd700, #ffa500);
+    border: none;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px #b38600;
+}
+
+#spin-btn:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px #b38600;
+}
+
+/* Popup chúc mừng */
+.hidden { display: none; }
+#result-popup {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex; justify-content: center; align-items: center;
+}
